@@ -2,8 +2,7 @@ import os
 from PIL import Image, ImageFilter
 
 
-def edit_photo(path):
-    path_out = "./edited/"
+def edit_photo(path, path_out):
 
     if not os.path.exists(path):
         return -1
@@ -24,4 +23,5 @@ def edit_photo(path):
 
 if __name__ == '__main__':
     in_dir = "./photos/"
-    edit_photo(in_dir)
+    out_dir = "./edited/"
+    edit_photo(in_dir, out_dir)
