@@ -4,6 +4,12 @@ from .. import youtube_downloader
 import pytest
 import os
 
+"""Further tests:
+- test if the file has the pretended duration
+- test if it has the right format .mp4
+- if it has the title, duration, etc 
+"""
+
 
 def test_youtube_downloader():
     """Tests if youtube downloader works as expected"""
@@ -14,5 +20,5 @@ def test_youtube_downloader():
     assert os.path.exists(path_out)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     pytest.main()
