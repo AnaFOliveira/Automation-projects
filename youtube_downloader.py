@@ -4,6 +4,11 @@ import os
 
 
 def downloader(link_to_download):
+    """
+    Downloads the video in link provided
+    :param link_to_download: link of the video to download
+    :return:
+    """
 
     video = YouTube(link_to_download)
     path_out = "./videos/"
@@ -22,6 +27,6 @@ def downloader(link_to_download):
     return 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     link = argv[1]
     downloader(link)
